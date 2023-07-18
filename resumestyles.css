@@ -1,0 +1,409 @@
+body{
+	margin: 0px;
+}
+/*----HEADER-----*/
+#body-header{
+	height:65vh;
+	/* background-image: url("static/background2.jpg"); */
+	background-image: linear-gradient(#031cafd4,#020542);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 20px;
+}
+/*  horizontal lists  */
+.horizontal-list{
+	text-align: center;
+	list-style: none;
+}
+.horizontal-list li{
+	display: inline-block;
+	font-family: serif;
+	font-size: 1.2rem;
+	margin: 0px 15px;
+}
+.horizontal-list li a{
+	color:white;
+	text-decoration: none;
+}
+.nav-menu li a:hover{
+		border-bottom: 1px solid white;
+		transition: color 2s, border-bottom 4s;
+}
+.horizontal-list li a:hover{
+	color:yellow;
+}
+.text-center{
+	text-align: center;
+}
+
+/*  DROPDOWN MENU  */
+.dropdown{
+	left: 95%;
+	top: 40px;
+	position: relative;
+	display: none;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  transform: scale(2);
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* RESPONSIVENESS CHECK ON NAVBAR */
+@media screen and (max-width :  800px)
+{
+	.nav-menu{
+		display:none;
+	}
+	.dropdown{
+		display: inline-block;
+	}
+}
+/*  name-social-container  */
+#name-social-container{
+	margin-top: 15vh;
+}
+#my-name{
+	font-size: 6rem;
+	letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    margin-left: 3.5rem;
+}
+.social-icons{
+		margin-top: 2rem;
+}
+.social-icons li a i{
+	padding:25px;
+	font-size: 2rem;
+	border-radius: 100%;
+}
+.social-icons li a i:hover{
+	box-shadow: 0px 0px 6px 4px rgba(220,196,196,0.9) ;
+	transition: box-shadow 1s;
+}
+/*-----MAIN-----*/
+main{
+
+}
+section{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+section:nth-child(2n){
+	background-color: lightgrey;
+}
+#contact{
+	background-image: linear-gradient(#031cafd4,#020542);
+}
+.section-heading{
+	width:auto;
+	padding: 20px 10px 10px;
+	margin: 10px auto;
+	font-weight: 400;
+}
+.section-heading span{
+	font-size: 40px;
+	color: grey;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+#contact h1 span{
+	font-size: 40px;
+	color: white;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+/*   about    */
+#about{
+	height:auto;
+	width:100%;
+	position: relative;
+}
+#my-image {
+	height:12rem;
+	width:12rem;
+	margin:auto;
+	margin-top: -17vh;
+}
+#my-image img{
+	height:100%;
+	width:100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 6px 6px white ;
+}
+#my-intro{
+	margin-top: 2rem;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+#my-intro p{
+	text-align: center;
+	text-align: justify;
+}
+/*     skills     */
+.skills-display{
+	width:70%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	margin-bottom: 5rem;
+}
+.skill-progress{
+	width:11rem;
+	height:2rem;
+	background-color: grey;
+	border-radius: 0.8rem;
+	margin: 2rem;
+}
+/*.skill-progress>div{
+	border-radius: 20px 0px 0px 20px;
+}*/
+.skill-name span{
+	color:white;
+	display:inline-block;
+	margin-top: 6px;
+	font-size: 1rem;
+	margin-left: 10px;
+}
+.mb75px{
+	margin-bottom: 75px;
+}
+/*percentage classes*/
+.ninety-five-percent{
+	width:95%;
+	background-color:orange;
+	height:inherit;
+	border-radius: 0.8rem;
+}
+.eighty-percent{
+	width:80%;
+	background-color:orange;
+	height:inherit;
+	border-radius: 0.8rem;
+}
+.seventy-five-percent{
+	width:75%;
+	background-color:orange;
+	height:inherit;
+	border-radius: 0.8rem;
+}
+.fifty-percent{
+	width:50%;
+	background-color:orange;
+	height:inherit;
+	border-radius: 0.8rem;
+}
+/*   experience  */
+.timeline{
+		position: relative;
+	width: 75%;
+	height: auto;
+	margin-bottom: 42px;
+}
+.timeline-box{
+	position: relative;
+	margin: 5px;
+	width:40%;
+	left: 5%;
+	min-height: 150px;
+	/*border: 2px solid yellow;*/
+}
+.timeline-box:nth-child(2n)
+{
+	left: 53%;
+}
+.timeline-divider{
+	position: absolute;
+	height:75%;
+	top: 10%;
+	width:0;
+	border : 3px dashed lightblue;
+	left:50%; 
+}
+
+/* RESPONSIVENESS CHECK ON WORKEXPERIENCE AND EDUCATION */
+@media screen and (max-width :  600px)
+{
+	.timeline-divider{
+		left:5%;
+	}	
+	.timeline-box{
+		left: 12% !important;
+		width: 80%;
+	}
+	.timeline-box::after{
+		left: -11.5% !important;
+	}
+	html{
+		font-size: 15px;
+	}
+	/*.timeline-box:nth-child(2n)
+	{
+		left: 12%;
+	}*/
+
+}
+
+.timeline-traveller{
+	position: sticky;
+	top:25%;
+	margin-left: -10px;
+	transform: scale(1.5);
+	color: darkblue;
+	z-index: 1;
+}
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	border-radius: 50%;
+	right: -13.5%;
+	width: 1rem;
+	height: 1rem;
+	background-color: lightgrey;
+	position: absolute;
+	top:30%;
+	z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	border-radius: 50%;
+	left: -10%;
+	width: 1rem;
+	height: 1rem;
+	background-color: lightgrey;
+	position: absolute;
+	top:30%;
+	z-index: 1;
+}
+.timeline-box h3{
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	color: blue;
+}
+.timeline-box h4{
+	text-align: center;
+	font-size: 1rem;
+	font-weight: lighter;
+	font-style : italic;
+	color: grey;
+	margin-top: -18px;
+}
+
+/*   education   */
+
+/*   portfolio   */
+.portfolio-display{
+	width:70%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	margin-bottom: 5rem;
+}
+.project{
+	width: 200px;
+	height:160px;
+	border-radius: 0.8rem;
+	margin: 2rem 4rem;
+	background-image: url("static/coverresumeproject.png");
+	background-position: center;
+	background-size: cover;
+}
+.project: hover{
+	opacity: 0.5;
+}
+/*    contact     */
+.contact-display{
+	width:70%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	
+}
+#form input, textarea{
+	border:0px;
+	width: 400px;
+	font-size: 15px;
+	margin-bottom: 15px;
+	padding: 4px;
+	color:white;
+	outline: none;
+	border-bottom: 2px solid white;
+	background-color: #3e00ff00;
+}
+button[type="submit"]{
+  background-color: #3e00ff00;
+  color: white;
+  margin-top: 2rem;
+  margin-left: 112px;
+  padding: 12px 18px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 2px solid white;
+}
+button[type="submit"]:hover {
+  background-color: #dc6520;
+}
+#info{
+	width: 500px;
+	height:160px;
+	border-radius: 0.8rem;
+	margin-top: -20px;
+	margin-bottom: 2rem;
+	margin-left: 4rem;
+}
+#info h3,span{
+	color:white;
+}
+#info p{
+	color:white;
+}
+#info span{
+		text-align: justify;
+}
+#social-container{
+	margin-top: 0rem;
+}
