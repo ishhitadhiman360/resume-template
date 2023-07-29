@@ -5,3 +5,10 @@ This project focuses on creating a dynamic and responsive resume template using 
 This project is my attempt to showcase my expertise in HTML, CSS, and JavaScript while providing users with a valuable tool to create professional resumes that effectively highlight their qualifications and experiences.
 
 Hope you like it, Happy Coding! 
+
+
+
+
+https://github.com/ishhita14/resume-template/assets/118781988/a6dc78a4-ce5e-4ac5-bbbf-48bf37dedf18
+
+
